@@ -20,7 +20,8 @@
             "platform": "windows",
             "artifact-extension": "dll",
             "flags": "use_mingw=yes",
-            "cache-name": "win-x86_64-mingw"
+            "cache-name": "win-x86_64-mingw",
+            "skip": true
         },
         {
             "name": "Windows (x86_64, MinGW, Double Precision)",
@@ -36,7 +37,16 @@
             "os": "ubuntu-20.04",
             "platform": "linux",
             "artifact-extension": "so",
-            "cache-name": "linux-x86_64"
+            "cache-name": "linux-x86_64",
+            "skip": true
+        },
+        {
+            "name": "Ubuntu (GCC, Double Precision)",
+            "os": "ubuntu-20.04",
+            "platform": "linux",
+            "artifact-extension": "so",
+            "flags": "precision=double",
+            "cache-name": "linux-x86_64-f64"
         },
         {
             "name": "MacOS (universal)",
@@ -44,7 +54,8 @@
             "platform": "macos",
             "artifact-extension": "framework",
             "flags": "arch=universal",
-            "cache-name": "macos-universal"
+            "cache-name": "macos-universal",
+            "skip": true
         },
         {
             "name": "Android (x86_64)",
@@ -52,7 +63,8 @@
             "platform": "android",
             "artifact-extension": "so",
             "flags": "arch=x86_64",
-            "cache-name": "android-x86_64"
+            "cache-name": "android-x86_64",
+            "skip": true
         },
         {
             "name": "Android (arm64)",
@@ -60,21 +72,24 @@
             "platform": "android",
             "artifact-extension": "so",
             "flags": "arch=arm64",
-            "cache-name": "android-arm64"
+            "cache-name": "android-arm64",
+            "skip": true
         },
         {
             "name": "iOS (arm64)",
             "os": "macos-latest",
             "platform": "ios",
             "artifact-extension": "xcframework",
-            "cache-name": "ios-arm64"
+            "cache-name": "ios-arm64",
+            "skip": true
         },
         {
             "name": "Web (wasm32)",
             "os": "ubuntu-20.04",
             "platform": "web",
             "artifact-extension": "wasm",
-            "cache-name": "web-wasm32"
+            "cache-name": "web-wasm32",
+            "skip": true
         }
     ]
 }

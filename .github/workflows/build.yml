@@ -1,7 +1,7 @@
 name: 🌈 All Builds
 on:
   push:
-    branches: [ master ]
+    branches: [ master, feature/add-linux-double-precision ]
     tags:
       - "v*"
 
