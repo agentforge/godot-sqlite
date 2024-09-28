@@ -57,6 +57,15 @@
             "skip": true
         },
         {
+            "name": "MacOS (universal, Double Precision)",
+            "os": "macos-latest",
+            "platform": "macos",
+            "artifact-extension": "framework",
+            "flags": "arch=universal precision=double",
+            "cache-name": "macos-universal-f64",
+            "skip": false
+        },
+        {
             "name": "Android (x86_64)",
             "os": "ubuntu-20.04",
             "platform": "android",
